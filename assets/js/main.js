@@ -45,3 +45,12 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+
+function showModal(){
+    const elemento = document.getElementById("modal")
+    elemento.classList.add("show-modal")
+}
+function hideModal(){
+    const elemento = document.getElementById("modal")
+    elemento.classList.remove("show-modal")
+}
