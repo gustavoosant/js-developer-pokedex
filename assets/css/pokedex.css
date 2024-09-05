@@ -97,6 +97,7 @@
     text-transform: capitalize;
     color: #fff;
     margin-bottom: .25rem;
+    text-align: left;
 }
 
 .pokemon .detail {
@@ -162,6 +163,17 @@
     cursor: pointer;
 }
 
+.pokeDetail .name{
+    text-transform: capitalize;
+    margin-bottom: .25rem;
+}
+
+.pokeDetail .number{
+    color: #000;
+    opacity: .3;
+    justify-content: right;
+}
+
 .pokeDetail button:hover{
     background-color: #363c6d;
 }
@@ -212,4 +224,156 @@
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
+}
+
+.pokeButton{
+    list-style: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.normal:hover {
+    background-color: #9c9e67;
+}
+
+.grass:hover {
+    background-color: #68c23d;
+}
+
+.fire:hover {
+    background-color: #ec7018;
+}
+
+.water:hover {
+    background-color: #507eeb;
+}
+
+.electric:hover {
+    background-color: #f6c915;
+}
+
+.ice:hover {
+    background-color: #86ced0;
+}
+
+.ground:hover {
+    background-color: #dbb654;
+}
+
+.flying:hover {
+    background-color: #9879ed;
+}
+
+.poison:hover {
+    background-color: #8e398e;
+}
+
+.fighting:hover {
+    background-color: #aa2b24;
+}
+
+.psychic:hover {
+    background-color: #f53e76;
+}
+
+.dark:hover {
+    background-color: #624c3d;
+}
+
+.rock:hover {
+    background-color: #a49031;
+}
+
+.bug:hover {
+    background-color: #94a11c;
+}
+
+.ghost:hover {
+    background-color: #624f86;
+}
+
+.steel:hover {
+    background-color: #aaa8c5;
+}
+
+.dragon:hover {
+    background-color: #5d20f5;
+}
+
+.fairy:hover {
+    background-color: #f796b7;
+}
+
+.normalDetail {
+    background-color: #a6a877;
+}
+
+.grassDetail {
+    background-color: #77c850;
+}
+
+.fireDetail {
+    background-color: #ee7f30;
+}
+
+.waterDetail {
+    background-color: #678fee;
+}
+
+.electricDetail {
+    background-color: #f7cf2e;
+}
+
+.iceDetail {
+    background-color: #98d5d7;
+}
+
+.groundDetail {
+    background-color: #dfbf69;
+}
+
+.flyingDetail {
+    background-color: #a98ff0;
+}
+
+.poisonDetail {
+    background-color: #a040a0;
+}
+
+.fightingDetail {
+    background-color: #bf3029;
+}
+
+.psychicDetail {
+    background-color: #f65687;
+}
+
+.darkDetail {
+    background-color: #725847;
+}
+
+.rockDetail {
+    background-color: #b8a137;
+}
+
+.bugDetail {
+    background-color: #a8b720;
+}
+
+.ghostDetail {
+    background-color: #6e5896;
+}
+
+.steelDetail {
+    background-color: #b9b7cf;
+}
+
+.dragonDetail {
+    background-color: #6f38f6;
+}
+
+.fairyDetail {
+    background-color: #f9aec7;
 }
