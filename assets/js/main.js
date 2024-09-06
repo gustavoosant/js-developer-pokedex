@@ -26,12 +26,24 @@ function convertPokemonToLi(pokemon) {
 
 function convertPokemonDetailsToModal(pokemon){
     return `
-        <div id="pokemon-details" class="pokeDetail">
-                <div class="modal-content">
-                    <button onclick= hideModal() id="close-details" type="button">Fechar</button>
-                    <div class="name">${pokemon.name}
-                        <div class="number">#${pokemon.number}</div>
+        <div id="pokemon-details" class="pokeDetail ${pokemon.type}Detail">
+                <div class="modal-content ${pokemon.type}Detail">
+                    <div class="detailsPoke ${pokemon.type}Detail">
+                        <button onclick= hideModal() id="close-details" type="button">Fechar</button>
+                        <p class="number">#${pokemon.number}</p>
+                        <p class="name">${pokemon.name}</p>
+                        <div class="types">
+                                ${pokemon.types.map((type) => `<span class="type ${type}Detail">${type}</span>`).join('')}
+                        </div>
+                        <p class="pokePhoto">
                         <img src="${pokemon.photo}" alt="${pokemon.name}">
+                        </p>
+                        <p>
+                        <ol class="pokeInfo">        
+                            <li><span class="tituloInfo">Peso</span><span>${pokemon.weight}</span></li>
+                            <li><span class="tituloInfo">Altura</span><span>${pokemon.height}</span></li>
+                        </ol>
+                        </p>
                     </div>
                 </div>
         </div>
@@ -66,9 +78,9 @@ function showModal(pokemonNumber){
     modal.classList.add("show-modal")
     pokeApi.getPokemons(offset, limit).then(pokemons => {
         const selectedPokemon = pokemons.find(pokemon => pokemon.number === pokemonNumber)
-            if (selectedPokemon) {
-                loadPokemonsDetails(selectedPokemon)
-            }
+        if (selectedPokemon) {
+            loadPokemonsDetails(selectedPokemon)
+        }
     })
 }
 

@@ -163,17 +163,6 @@
     cursor: pointer;
 }
 
-.pokeDetail .name{
-    text-transform: capitalize;
-    margin-bottom: .25rem;
-}
-
-.pokeDetail .number{
-    color: #000;
-    opacity: .3;
-    justify-content: right;
-}
-
 .pokeDetail button:hover{
     background-color: #363c6d;
 }
@@ -214,7 +203,6 @@
 }
 
 .modal-content{
-    background-color: white;
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -376,4 +364,52 @@
 
 .fairyDetail {
     background-color: #f9aec7;
+}
+
+.pokeDetail{
+    margin: 0;
+    padding: 0;
+    border-radius: 1rem;
+}
+
+.detailsPoke img{
+    max-width: 100%;
+    height: 275px;
+}
+
+.detailsPoke .name{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+}
+.detailsPoke .number{
+    text-align: left;
+    color: #fff;
+}
+
+.detailsPoke .type{
+    color: #fff;
+    list-style: none;
+    font-size: 0.90rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: left;
+    padding: .5rem .5rem;
+    margin: .25rem 0;
+}
+
+.pokeInfo{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 1rem;
+    display: grid;
+    justify-content: center;
+}
+
+.pokeInfo .tituloInfo{
+    opacity: 50%;
+    padding-right: 1rem;
 }
